@@ -29,7 +29,7 @@ for assistance along the way.
 documentation before getting started. Everything you'll need to know is in there.
   * **Hint:** Your API key is important to both getting the results and playing the song
   * Also, note there are some SDK's etc that SoundCloud offers, no need for this, just use their standard 
-REST API ( [docs here](https://developers.soundcloud.com/docs/api/reference){:target="\_blank"} )
+REST API ( [docs here](https://developers.soundcloud.com/docs/api/reference) )
 * Form Submission
   * You should use the _onSubmit()_ method on your form. This will trap when the submit button was pressed, 
 thus allowing you to write a handler function.
@@ -39,10 +39,10 @@ thus allowing you to write a handler function.
 (don't forgot to send your API token as well)
 * Playing a Song
   * You'll need to research the _\<audio\>_ tag for this part - 
-  [docs here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio){:target="_blank"}
+  [docs here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)
   * **Hint:** You'll need to dynamically change the src value   
 The biggest gotchya will likely be getting the song to play. Since your JavaScript has already run, 
 if you added an onClick event listener to your page, but you add the content after the fact it won't 
 register. You need to get creative here, but putting your onClick around the entire results section, 
 and then making sure to get the correct item clicked on. Here is a great article on 
-[Event Delegation](https://davidwalsh.name/event-delegate){:target="_blank"}
+[Event Delegation](https://davidwalsh.name/event-delegate)
