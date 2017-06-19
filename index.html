@@ -16,11 +16,17 @@
         <audio class="music-player" controls="controls" src=""></audio>
       </section>
       <section class="search">
-        <form class="search-form">
-
+        <form id="search-form">
+          <div class="name">
+            <label for="name">Name</label>
+            <input type="text" name="firstLast_name" id="firstLast_name">
+          </div>
+          <div class="submit_container">
+            <input type="submit" id="submit_button" value="Submit">
+          </div>
         </form>
       </section>
-      <section class="results"></section>
+      <section id="results"></section>
     </div>
     <script src="main.js"></script>
   </main>
