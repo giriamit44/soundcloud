@@ -24,6 +24,29 @@ h1 {}
 
 .search {}
 
-.search-form {}
+#search-form {
+  display: flex;
+  flex-direction: column;
+}
 
-.results {}
+.input {
+  
+}
+
+.submit_container {
+  
+}
+
+#results {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.title {
+  width: 25%;
+}
+
+li {
+  list-style-type: none;
+}

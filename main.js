@@ -7,7 +7,7 @@ console.log("talking");
 
 
 // 2. Create your `onSubmit` event for getting the user's search term
-
+getElementById=submit_button.onclick
 
 // 3. Create your `fetch` request that is called after a submission
 //fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501e04')
@@ -20,6 +20,7 @@ fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501
         return;
       }
 
+// 4. Create a way to append the fetch results to your page
       // Examine the text in the response
       response.json().then(function (data) {
         //console.log("fetch worked:", data[0].title);
@@ -27,11 +28,10 @@ fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501
           console.log("show each title:", data[i].title);
           let markup = `
            <div class="title">
-             <p></p>
-             <p></p>
-             <ul>Title and artist:
-               <li>Title: ${data[i].title}</li>
-               <li>User: ${data[i].user.username}</li>
+             <ul>
+               <li><img src=${data[i].user.avatar_url}></li>
+               <li>${data[i].title}</li>
+               <li>${data[i].user.username}</li>
              </ul>
            </div>
          `
@@ -41,9 +41,8 @@ fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501
     }
   )
 
+//<img class="profile_pic" src=${customers.picture.large}>
 
-
-// 4. Create a way to append the fetch results to your page
 
 
 // 5. Create a way to listen for a click that will play the song in the audio play
