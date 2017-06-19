@@ -3,16 +3,8 @@
 */
 console.log("talking");
 // 1. First select and store the elements you'll be working with
-let search = document.querySelector('.search');
-console.log("searchField:", search);
-
-//try and create the search area
 
 
-//try and create the 'Search' button
-//var search_button = document.querySelector(".search-form");
-//var input = document.createElement("input");
-//input.appendChild(form);
 
 // 2. Create your `onSubmit` event for getting the user's search term
 
@@ -21,7 +13,7 @@ console.log("searchField:", search);
 //fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501e04')
 fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501e04&q=asdf')
   .then(
-    function(response) {
+    function (response) {
       if (response.status !== 200) {
         console.log('Looks like there was a problem. Status Code: ' +
           response.status);
@@ -29,7 +21,7 @@ fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501
       }
 
       // Examine the text in the response
-      response.json().then(function(data) {
+      response.json().then(function (data) {
         //console.log("fetch worked:", data[0].title);
         for (let i = 0; i < data.length; i++) {
           console.log("show each title:", data[i].title);
