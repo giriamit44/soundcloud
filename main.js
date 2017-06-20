@@ -3,18 +3,25 @@
 */
 console.log("talking");
 // 1. First select and store the elements you'll be working with
-let search = document.getElementById("search_field").value;
-console.log("what's in search?:", search);
+let searchIn = document.getElementById("search_field");
+let submit = document.getElementById('submit_button');
+let searchResults;
+
+let player = document.getElementsByClassName('music-player');
+//console.log("what's in search?:", search);
 
 
 // 2. Create your `onSubmit` event for getting the user's search term
-
-//  =submit_button.onclick
+//commenting out of now.  Research...returns following error;
+//main.js:16 Uncaught TypeError: Failed to execute 'addEventListener' on 'EventTarget': 2 arguments required, but only 1 present.
+//submit.addEventListener('click')
 
 // 3. Create your `fetch` request that is called after a submission
-//fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501e04')
+// This fetch needs to be wrapped in a function so I can include the search string as input *I think*
 
-fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501e04&q=asdf')
+//fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501e04&q=' + search)
+
+fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501e04&q=billy joel')
   .then(
     function (response) {
       if (response.status !== 200) {

@@ -7,6 +7,7 @@
 
 body {
   background-color: #60d9f1;
+  background-color: lightgreen;
 }
 
 .container {
@@ -26,7 +27,7 @@ h1 {}
 
 .search {
   border-top: 2px solid grey;
-  padding: 1.5em;
+  padding: 1em;
   width: 100%;
 }
 
@@ -45,6 +46,8 @@ h1 {}
 
 .submit_container {
   border: 1px solid black;
+  border-radius: 1em;
+  cursor: pointer;
   text-align: center;
   width: 20%;
 }
@@ -57,7 +60,7 @@ h1 {}
 
 .artist_container {
   align-items: center;
-  border: 1px solid black;
+/*  border: 1px solid black;*/
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -66,10 +69,12 @@ h1 {}
 }
 
 .avatar_container {}
+
 img {
   height: 132px;
   width: 150px;
 }
+
 .avatar {}
 
 .title_artist {
@@ -80,6 +85,18 @@ img {
   width: 25%;
   font-weight: 900;
 }
+
 li {
+  display: flex;
+  justify-content: center;
   list-style-type: none;
+}
+
+#title {
+  font-size: small;
+}
+
+#artist {
+  font-size: large;
+  font-weight: 600; 
 }
