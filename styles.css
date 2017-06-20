@@ -39,6 +39,7 @@ h1 {}
   background-color: lightgrey;
   border: 1px solid black;
   box-shadow: 1px 1px 1px inset;
+  height: 2em;
   width: 70%;
 }
 
@@ -55,6 +56,8 @@ h1 {}
 }
 
 .artist_container {
+  align-items: center;
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -62,35 +65,19 @@ h1 {}
   width: 25%;
 }
 
-.avatar_container {
-  
-}
 
+}
+.avatar_container {}
 img {
   height: 132px;
   width: 150px;
 }
-
 .avatar {}
-
 .title_artist {}
-
-.title {
-  width: 25%;
+#title {}
+#artist {
+  font-weight: 900;
 }
-
 li {
   list-style-type: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
