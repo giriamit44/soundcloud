@@ -62,9 +62,7 @@ h1 {}
   width: 25%;
 }
 
-.avatar_container {
-  
-}
+.avatar_container {}
 
 img {
   height: 132px;
@@ -73,7 +71,9 @@ img {
 
 .avatar {}
 
-.title_artist {}
+.title_artist {
+  align-self: center;
+}
 
 .title {
   width: 25%;
@@ -82,15 +82,3 @@ img {
 li {
   list-style-type: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
