@@ -29,17 +29,37 @@ fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501
         for (let i = 0; i < data.length; i++) {
           console.log("show each title:", data[i].title);
           let markup = `
-           <div class="title">
+          <div class="artist_container">
+          <div class="avatar_container">
+           <img class="avatar" src=${data[i].user.avatar_url}>
+          </div>
+           <div class="title_artist">
              <ul>
-               <li><img src=${data[i].user.avatar_url}></li>
                <li>${data[i].title}</li>
                <li>${data[i].user.username}</li>
              </ul>
            </div>
+          </div>
          `
           document.getElementById("results").innerHTML += markup;
         }
       });
+      //      response.json().then(function (data) {
+      //        //console.log("fetch worked:", data[0].title);
+      //        for (let i = 0; i < data.length; i++) {
+      //          console.log("show each title:", data[ i].title);
+      //          let markup = `
+      //           <div class="title">
+      //             <ul>
+      //               <li><img src=${data[i].user.avatar_url}></li>
+      //               <li>${data[i].title}</li>
+      //               <li>${data[i].user.username}</li>
+      //             </ul>
+      //           </div>
+      //         `
+      //          document.getElementById("results").innerHTML += markup;
+      //        }
+      //      });
     }
   )
 
