@@ -12,16 +12,16 @@ let player = document.getElementsByClassName('music-player');
 
 
 // 2. Create your `onSubmit` event for getting the user's search term
-//commenting out of now.  Research...returns following error;
+//commenting out for now.  Research...returns following error;
 //main.js:16 Uncaught TypeError: Failed to execute 'addEventListener' on 'EventTarget': 2 arguments required, but only 1 present.
-//submit.addEventListener('click')
+//submit.addEventListener('click', function() {});
 
 // 3. Create your `fetch` request that is called after a submission
-// This fetch needs to be wrapped in a function so I can include the search string as input *I think*
+// NOTE: *I think* this fetch needs to be wrapped in a function so I can include the search string as input
 
 //fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501e04&q=' + search)
 
-fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501e04&q=billy joel')
+fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501e04&q=billy_joel')
   .then(
     function (response) {
       if (response.status !== 200) {
@@ -55,3 +55,4 @@ fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501
   )
 
 // 5. Create a way to listen for a click that will play the song in the audio play
+// ?? data[i].stream_url  ??
