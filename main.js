@@ -12,16 +12,25 @@ let player = document.getElementsByClassName('music-player');
 
 
 // 2. Create your `onSubmit` event for getting the user's search term
-//commenting out for now.  Research...returns following error;
-//main.js:16 Uncaught TypeError: Failed to execute 'addEventListener' on 'EventTarget': 2 arguments required, but only 1 present.
-//submit.addEventListener('click', function() {});
+
+//submit.addEventListener('click', goSearch() {});
+//
+//function goSearch() {
+//    var searchField = document.getElementById("search_field");
+//  
+//    if(searchField.value == "Search for Artist") {
+//      searchField.value = ''
+//      searchField.placeholder = 'Search for Artist'
+//    }
+//}
+//console.log("searchField:", search_field);
 
 // 3. Create your `fetch` request that is called after a submission
 // NOTE: *I think* this fetch needs to be wrapped in a function so I can include the search string as input
 
 //fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501e04&q=' + search)
 
-fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501e04&q=billy_joel')
+fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501e04')
   .then(
     function (response) {
       if (response.status !== 200) {
@@ -37,10 +46,10 @@ fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501
           console.log("show each title:", data[i].title);
           let markup = `
           <div class="artist_container">
-          <div class="avatar_container">
-           <img class="avatar" src=${data[i].user.avatar_url}>
-          </div>
-           <div class="title_artist">
+            <div class="avatar_container">
+              <img class="avatar" src=${data[i].user.avatar_url}>
+            </div>
+            <div class="title_artist">
              <ul>
                <li id="title">${data[i].title}</li>
                <li id="artist">${data[i].user.username}</li>

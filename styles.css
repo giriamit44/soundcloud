@@ -21,6 +21,10 @@ body {
   padding-bottom: 1em;
 }
 
+audio::-webkit.media-controls-panel{
+  color: darkgreen;
+}
+
 .music-player {}
 
 h1 {
@@ -28,47 +32,49 @@ h1 {
   font-size: 3em;
   padding-bottom: .5em;
   text-shadow: 0.02em 0.02em 1em black;
+  text-transform: lowercase;
 }
 
 .search {
-  border-top: 2px solid darkgreen;
-  padding: 1em;
-  width: 85%;
+  padding-bottom: 1.5em;
 }
 
 #search-form {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 1em;
-}
-
-.input {
-  background-color: darkgreen;
-/*  border: 1px solid black;*/
-  border-radius: .5em;
-  box-shadow: .25em .25em 1em;
-  height: 2em;
-  width: 70%;
+  display: inline-flex;
+  font-size: 20px;
 }
 
 #search_field {
-  background-color: darkgreen;
-  font-size: 1em;
+  font-size: inherit;
+  border: 0.2em solid #7e7;
+  border-radius: 0.5em 0 0 0.5em;
+  padding: 0.2em 0.5em;
+  outline: 0;
+  width: 25em;
 }
 
-.submit_container {
-  background-color: darkgreen;
-/*  border: 1px solid black;*/
-  border-radius: 1em;
-  box-shadow: .25em .25em 1em;
-  cursor: pointer;
-  text-align: center;
-  width: 10%;
+#search_field:hover,
+#search_field:focus {
+  border-color: #4d4;
 }
 
 #submit_button {
-  background-color: darkgreen;
-  font-size: 1em;
+  font-size: inherit;
+  border: 0.2em solid #7e7;
+  border-radius: 0 0.5em 0.5em 0;
+  background-color: #7e7;
+  border-left: 0;
+  padding: 0 0.7em;
+  color: #fff;
+/*  font-weight: bold;*/
+  outline: 0;
+  cursor: pointer;
+}
+
+submit_button:hover,
+submit_button:focus {
+  border-color: #4d4;
+  background-color: #4d4;
 }
 
 #results {
