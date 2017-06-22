@@ -30,7 +30,7 @@ let player = document.getElementsByClassName('music-player');
 
 //fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501e04&q=' + search)
 
-fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501e04')
+fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501e04&q=billy joel')
   .then(
     function (response) {
       if (response.status !== 200) {

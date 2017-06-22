@@ -99,6 +99,10 @@ img {
   width: 150px;
 }
 
+img:hover{
+  cursor: pointer;
+}
+
 .title_artist {
   align-self: center;
 }
