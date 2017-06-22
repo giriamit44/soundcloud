@@ -21,7 +21,7 @@ body {
   padding-bottom: 1em;
 }
 
-audio::-webkit.media-controls-panel{
+audio::-webkit-media-controls-panel {
   color: darkgreen;
 }
 
