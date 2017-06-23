@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+::-webkit-input-placeholder { /* Chrome */
+  color: #4d4;
+}
+
 body {
   background-color: #60d9f1;
   background-color: lightgreen;
@@ -24,8 +28,6 @@ body {
 audio::-webkit-media-controls-panel {
   color: darkgreen;
 }
-
-.music-player {}
 
 h1 {
   color: darkgreen;
@@ -48,6 +50,7 @@ h1 {
   font-size: inherit;
   border: 0.2em solid #7e7;
   border-radius: 0.5em 0 0 0.5em;
+  color: #4d4;
   padding: 0.2em 0.5em;
   outline: 0;
   width: 25em;
@@ -65,8 +68,7 @@ h1 {
   background-color: #7e7;
   border-left: 0;
   padding: 0 0.7em;
-  color: #fff;
-/*  font-weight: bold;*/
+  color: darkgreen;
   outline: 0;
   cursor: pointer;
 }
@@ -99,8 +101,14 @@ img {
   width: 150px;
 }
 
-img:hover{
+img:hover {
   cursor: pointer;
+  background: transparent url(./images/Music-128.png); /* not working as intended...INVESTIGATE */
+  opacity: 0.6;
+}
+
+img:active {
+  box-shadow: inset 0 0 0 0; /* semi working as intended...INVESTIGATE */
 }
 
 .title_artist {
