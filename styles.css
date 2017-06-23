@@ -127,10 +127,12 @@ li {
 }
 
 #title {
+  color: darkgreen;
   font-size: small;
 }
 
 #artist {
+  color: darkgreen;
   font-size: large;
   font-weight: 600; 
 }
