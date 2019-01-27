@@ -48,7 +48,7 @@ h1 {
 
 #search_field {
   font-size: inherit;
-  border: 0.2em solid #7e7;
+  border: 1px solid #7e7;
   border-radius: 0.5em 0 0 0.5em;
   color: #4d4;
   padding: 0.2em 0.5em;
@@ -63,20 +63,20 @@ h1 {
 
 #submit_button {
   font-size: inherit;
-  border: 0.2em solid #7e7;
+  border: 1px solid #7e7;
   border-radius: 0 0.5em 0.5em 0;
-  background-color: #7e7;
+  background-color: #7d7;
   border-left: 0;
-  padding: 0 0.7em;
+  padding: 0.2em 0.5em;
   color: darkgreen;
   outline: 0;
   cursor: pointer;
 }
 
-submit_button:hover,
-submit_button:focus {
-  border-color: #4d4;
-  background-color: #4d4;
+#submit_button:hover,
+#submit_button:focus {
+  border-color: #4e4;
+  background-color: #4e4;
 }
 
 #results {
@@ -103,7 +103,7 @@ img {
 
 img:hover {
   cursor: pointer;
-  background: transparent url(./images/Music-128.png); /* not working as intended...INVESTIGATE */
+  background: transparent url(images/Music-128.png); /* not working as intended...INVESTIGATE */
   opacity: 0.6;
 }
 
