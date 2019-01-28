@@ -10,7 +10,7 @@ look like, though you can have fun with the design.
 
 Here are the steps you'll need to take in order to complete this project.  
   * Sign up to [SoundCloud for Developers](https://developers.soundcloud.com/) and get an API key.  
-  * Build a simple form that has an `\<input\>` where a user can fill in their favorite band, like 
+  * Build a simple form that has an `<input>` where a user can fill in their favorite band, like 
   [Billy Joel](https://soundcloud.com/billyjoel), and it will return a handful of songs by them or 
   with their name in it.  
   * When the user types in a band name and presses the submit button, you should then make the 
@@ -18,7 +18,7 @@ Here are the steps you'll need to take in order to complete this project.
   * Once you have the data, you should `fetch` the specific data and use the results to display 
   a listing of songs related to the search term.  
   * Then to add some features, you should set it up so when a user clicks on one of the songs, 
-  it should then play in an `\<audio\>` tag that you've also added to the page.  
+  it should then play in an `<audio>` tag that you've also added to the page.  
 
 ## Hints & Tips
 
@@ -39,7 +39,7 @@ assistance along the way.
   * You'll need to take the value from above and use that to build out your URL to send to
   SoundCloud. (Don't forget to send your API token as well)  
 * Playing a Song  
-  * You'll need to research the `\<audio\>` tag for this part - 
+  * You'll need to research the `<audio>` tag for this part - 
   [docs here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)  
   * **Hint:** You'll need to dynamically change the `src` value  
 The biggest gotcha will likely be getting the song to play. Since your JavaScript has already run, 
