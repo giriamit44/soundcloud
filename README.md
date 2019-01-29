@@ -1,4 +1,7 @@
+#### Click [to view in your browser](https://sjroma.github.io/soundcloud)
+
 # SoundCloud
+SoundCloud is an online audio distribution platform and music sharing website based in Berlin, Germany that enables its users to upload, promote, and share audio.
 ## SoundCloud Music Search
 As your final project for this portion of the course, let's take stock of all you have learned 
 and build a real application that is useful and you can share with friends. For this app, we 
