@@ -5,7 +5,8 @@
   padding: 0;
 }
 
-::-webkit-input-placeholder { /* Chrome */
+/* Chrome */
+::-webkit-input-placeholder {
   color: #4d4;
 }
 
@@ -37,8 +38,17 @@ h1 {
   text-transform: lowercase;
 }
 
+hr {
+  border-color: #1e1;
+  border-style: inset;
+  border-width: 1px;
+  display: block;
+  width: 80%;
+}
+
 .search {
   padding-bottom: 1.5em;
+  padding-top: 1.5em;
 }
 
 #search-form {
@@ -87,11 +97,12 @@ h1 {
 
 .artist_container {
   align-items: center;
-/*  border: 1px solid black;*/
+  /* border: 1px solid black;*/ /*used this to align everything in the grid*/
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 1em;
   width: 25%;
 }
 
@@ -120,19 +131,23 @@ img:active {
   font-weight: 900;
 }
 
-li {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
+#playing {
+  color: darkgreen;
+  font-size: small;
+  font-weight: bold;
 }
 
 #title {
   color: darkgreen;
   font-size: small;
+  list-style-type: none;
+  text-align: center
 }
 
 #artist {
   color: darkgreen;
   font-size: large;
-  font-weight: 600; 
+  font-weight: 600;
+  list-style-type: none;
+  text-align: center;
 }
